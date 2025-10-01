@@ -5,9 +5,6 @@ class DietScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Text("Diet Screen"),
-
-    );
+    return Scaffold(body: Center(child: Text("Tanvir Screen")));
   }
 }
