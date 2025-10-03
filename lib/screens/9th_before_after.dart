@@ -2,7 +2,7 @@ import 'package:diet_esports/components/Images.dart';
 import 'package:diet_esports/components/custom_btn.dart';
 import 'package:diet_esports/components/fonts.dart';
 import 'package:diet_esports/components/replay_btn.dart';
-import 'package:diet_esports/screens/home_screen.dart';
+import 'package:diet_esports/screens/4th_Screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -82,13 +82,9 @@ class _TransformationScreenState extends State<TransformationScreen> {
               /// Weight & Height Row
               Row(
                 children: [
-                  Expanded(
-                    child: _infoBox("70.0kg"),
-                  ),
+                  Expanded(child: _infoBox("70.0kg")),
                   SizedBox(width: 10.w),
-                  Expanded(
-                    child: _infoBox("170.0cl"),
-                  ),
+                  Expanded(child: _infoBox("170.0cl")),
                 ],
               ),
               SizedBox(height: 5.h),
@@ -173,10 +169,7 @@ class _TransformationScreenState extends State<TransformationScreen> {
       child: Center(
         child: Text(
           text,
-          style: TextStyle(
-            fontSize: 15.sp,
-            fontFamily: Fonts.poppins,
-          ),
+          style: TextStyle(fontSize: 15.sp, fontFamily: Fonts.poppins),
         ),
       ),
     );

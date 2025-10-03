@@ -1,13 +1,9 @@
 import 'package:diet_esports/components/Images.dart';
+import 'package:diet_esports/screens/12th_step_cont.dart';
+import 'package:diet_esports/screens/4th_Screen.dart';
 import 'package:diet_esports/screens/5th_Gym_Men.dart';
 import 'package:diet_esports/screens/6th_Calorie_Details.dart';
 import 'package:diet_esports/screens/cart/diet_screen.dart';
-import 'package:diet_esports/screens/diet_screen.dart';
-import 'package:diet_esports/screens/home_screen.dart';
-import 'package:diet_esports/screens/12th_step_cont.dart';
-import 'package:diet_esports/screens/note_screen.dart';
-import 'package:diet_esports/screens/pc_screen.dart';
-import 'package:diet_esports/screens/walk_screen.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavBar extends StatefulWidget {
@@ -33,7 +29,7 @@ class _BottomNavBarState extends State<BottomNavBar>
   final List<Widget> _pages = [
     const HomeScreen(),
     const GymMen(),
-    const NEwSc(),
+    const TwelveScreen(),
     const SixthScreen(),
     const DietCartScreen(),
   ];
@@ -71,14 +67,14 @@ class _BottomNavBarState extends State<BottomNavBar>
       Images.walk_ic,
       Images.note_ic,
       Images.diet_ic,
-
     ];
 
     return Scaffold(
       backgroundColor: const Color(0xFF171717),
       body: IndexedStack(index: _currentIndex, children: _pages),
       bottomNavigationBar: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 30, vertical: 30),//change position of bottom bar
+        margin: const EdgeInsets.symmetric(horizontal: 30, vertical: 30),
+        //change position of bottom bar
         padding: const EdgeInsets.symmetric(horizontal: 10),
         height: 60,
         decoration: BoxDecoration(
@@ -110,7 +106,6 @@ class _BottomNavBarState extends State<BottomNavBar>
                   decoration: BoxDecoration(
                     color: Color(0xFFF4B701),
                     borderRadius: BorderRadius.circular(30),
-
                   ),
                   height: 44,
                   width: 44,

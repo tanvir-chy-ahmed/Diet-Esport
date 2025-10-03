@@ -117,11 +117,11 @@ class _ThirteenScreenState extends State<ThirteenScreen> {
                         ),
                       ],
                     ),
-                    SizedBox(height: 20.h,),
+                    SizedBox(height: 20.h),
 
-                    Image.asset(Images.gym_img,fit: BoxFit.cover,),
-                    Image.asset(Images.gym_img2,fit: BoxFit.cover,),
-                    SizedBox(height: 15.h,),
+                    Image.asset(Images.gym_img, fit: BoxFit.cover),
+                    Image.asset(Images.gym_img2, fit: BoxFit.cover),
+                    SizedBox(height: 15.h),
                     Text(
                       "In quali giorni ti vuoi allenare?",
                       textAlign: TextAlign.center,
@@ -131,38 +131,38 @@ class _ThirteenScreenState extends State<ThirteenScreen> {
                         fontSize: 15,
                       ),
                     ),
-                    SizedBox(height: 15.h,),
+                    SizedBox(height: 15.h),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         CustomButton(
                           text: "Consigliami",
                           onPressed: () {},
-                          fontsize: 20,
+                          fontsize: 18,
                           color: Color(0xFFE7DCCB),
                           widthPercent: 0.45,
                           heightPercent: 0.06,
                         ),
-                        ReplayBtn(onReplay: (){})
+                        ReplayBtn(onReplay: () {}),
                       ],
                     ),
-                    SizedBox(height: 20.h,),
+                    SizedBox(height: 20.h),
 
-                    ///LVGGMM
+                    ///LMMGVSD
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        WordContainer("L", (){},true),
-                        WordContainer("m", (){},true),
-                        WordContainer("m", (){},false),
-                        WordContainer("g", (){},true),
-                        WordContainer("V", (){},true),
-                        WordContainer("S", (){},false),
-                        WordContainer("D", (){},false),
+                        WordContainer("L", () {}, true),
+                        WordContainer("m", () {}, true),
+                        WordContainer("m", () {}, false),
+                        WordContainer("g", () {}, true),
+                        WordContainer("V", () {}, true),
+                        WordContainer("S", () {}, false),
+                        WordContainer("D", () {}, false),
                       ],
                     ),
-                    SizedBox(height: 20.h,),
+                    SizedBox(height: 20.h),
                   ],
                 ),
               ),
@@ -196,7 +196,7 @@ Widget SlideBtn(String text, VoidCallback onClick) {
 }
 
 @override
-Widget WordContainer(String text, VoidCallback onClick,bool isColorYellow) {
+Widget WordContainer(String text, VoidCallback onClick, bool isColorYellow) {
   return ElevatedButton(
     onPressed: onClick,
     style: ElevatedButton.styleFrom(

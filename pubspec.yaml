@@ -48,6 +48,8 @@ dev_dependencies:
   shared_preferences:
   provider:
   flutter_screenutil:
+  table_calendar:
+  smooth_page_indicator:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -86,6 +88,12 @@ flutter:
      - assets/transform.png
      - assets/gym_img.png
      - assets/gym_img2.png
+     - assets/walking_img.png
+     - assets/two_person.png
+     - assets/gym.png
+     - assets/gym_equipment.png
+     - assets/image_11.png
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

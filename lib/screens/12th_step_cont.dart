@@ -1,12 +1,10 @@
 import 'package:diet_esports/components/Images.dart';
-import 'package:diet_esports/components/custom_btn.dart';
-import 'package:diet_esports/components/fonts.dart';
 import 'package:diet_esports/components/replay_btn.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class NEwSc extends StatelessWidget {
-  const NEwSc({super.key});
+class TwelveScreen extends StatelessWidget {
+  const TwelveScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -56,10 +54,7 @@ class NEwSc extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     SizedBox(height: 40.h),
-                    Image.asset(
-                      Images.person,
-                      fit: BoxFit.cover,
-                    ),
+                    Image.asset(Images.person, fit: BoxFit.cover),
                     SizedBox(height: 30.h),
 
                     Padding(
@@ -92,7 +87,9 @@ class NEwSc extends StatelessWidget {
                               filled: true,
                               fillColor: Colors.grey[800],
                               contentPadding: EdgeInsets.symmetric(
-                                  vertical: 12.h, horizontal: 16.w),
+                                vertical: 12.h,
+                                horizontal: 16.w,
+                              ),
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(30.r),
                                 borderSide: BorderSide.none,
@@ -126,7 +123,9 @@ class NEwSc extends StatelessWidget {
                               filled: true,
                               fillColor: Colors.grey[800],
                               contentPadding: EdgeInsets.symmetric(
-                                  vertical: 12.h, horizontal: 16.w),
+                                vertical: 12.h,
+                                horizontal: 16.w,
+                              ),
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(30.r),
                                 borderSide: BorderSide.none,

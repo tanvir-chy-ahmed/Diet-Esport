@@ -23,6 +23,9 @@ class Images {
   static const String transformation_img = "assets/transform.png";
   static const String gym_img2 = "assets/gym_img2.png";
   static const String gym_img = "assets/gym_img.png";
-
-
+  static const String walking_img = "assets/walking_img.png";
+  static const String two_Person_img = "assets/two_person.png";
+  static const String gym_1 = "assets/gym.png";
+  static const String gym_equipment = "assets/gym_equipment.png";
+  static const String image_11 = "assets/image_11.png";
 }
