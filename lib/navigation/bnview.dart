@@ -1,7 +1,10 @@
 import 'package:diet_esports/components/Images.dart';
-import 'package:diet_esports/screens/cart/cart_screen.dart';
+import 'package:diet_esports/screens/5th_Gym_Men.dart';
+import 'package:diet_esports/screens/6th_Calorie_Details.dart';
+import 'package:diet_esports/screens/cart/diet_screen.dart';
 import 'package:diet_esports/screens/diet_screen.dart';
-import 'package:diet_esports/screens/gym_screen.dart';
+import 'package:diet_esports/screens/home_screen.dart';
+import 'package:diet_esports/screens/12th_step_cont.dart';
 import 'package:diet_esports/screens/note_screen.dart';
 import 'package:diet_esports/screens/pc_screen.dart';
 import 'package:diet_esports/screens/walk_screen.dart';
@@ -20,18 +23,18 @@ class _BottomNavBarState extends State<BottomNavBar>
   late TabController _tabController;
 
   final List<Color> colors = [
-    Colors.white,
-    Colors.white,
-    Colors.white,
-    Colors.white,
-    Colors.white,
+    Color(0xFF6C6C6C),
+    Color(0xFF6C6C6C),
+    Color(0xFF6C6C6C),
+    Color(0xFF6C6C6C),
+    Color(0xFF6C6C6C),
   ];
 
   final List<Widget> _pages = [
-    const GymScreen(),
-    const PcScreen(),
-    const WalkScreen(),
-    const NoteScreen(),
+    const HomeScreen(),
+    const GymMen(),
+    const NEwSc(),
+    const SixthScreen(),
     const DietCartScreen(),
   ];
 
@@ -72,9 +75,10 @@ class _BottomNavBarState extends State<BottomNavBar>
     ];
 
     return Scaffold(
+      backgroundColor: const Color(0xFF171717),
       body: IndexedStack(index: _currentIndex, children: _pages),
       bottomNavigationBar: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+        margin: const EdgeInsets.symmetric(horizontal: 30, vertical: 30),//change position of bottom bar
         padding: const EdgeInsets.symmetric(horizontal: 10),
         height: 60,
         decoration: BoxDecoration(

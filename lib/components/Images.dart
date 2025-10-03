@@ -13,6 +13,16 @@ class Images {
   static const String onb_img = "assets/onb_img.png";
   static const String logo_ic = "assets/logo_ic.png";
   static const String elipse_ic = "assets/elipse.png";
+  static const String logo_square_ic = "assets/logo_square_ic.png";
+  static const String profile_ic = "assets/profile.png";
+  static const String men = "assets/men.png";
+  static const String bg_screen = "assets/bg_screen.png";
+  static const String girl_bg = "assets/girl_bg.png";
+  static const String body_img = "assets/body_img.png";
+  static const String person = "assets/boy_girl.png";
+  static const String transformation_img = "assets/transform.png";
+  static const String gym_img2 = "assets/gym_img2.png";
+  static const String gym_img = "assets/gym_img.png";
 
 
 }

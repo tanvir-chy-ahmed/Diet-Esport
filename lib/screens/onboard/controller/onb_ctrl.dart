@@ -1,4 +1,5 @@
 import 'package:diet_esports/navigation/bnview.dart';
+import 'package:diet_esports/screens/login/login_screen.dart';
 import 'package:diet_esports/screens/onboard/onb_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -42,9 +43,6 @@ class _OnboardingCtrlState extends State<OnboardingCtrl> {
 
   @override
   Widget build(BuildContext context) {
-    if (isLoading) {
-      return Scaffold(body: Center(child: CircularProgressIndicator()));
-    }
     if (!showOnboarding) {
       return BottomNavBar();
     }
@@ -60,40 +58,16 @@ class _OnboardingCtrlState extends State<OnboardingCtrl> {
               });
             },
             children: [
-
-
               OnboradingScreen(
                 onNext: () => Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(
-                    builder: (context) => BottomNavBar(),
-                  ),
+                  MaterialPageRoute(builder: (context) => LoginScreen()),
                 ),
               ),
             ],
           ),
-
-
         ],
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

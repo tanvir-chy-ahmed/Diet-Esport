@@ -1,4 +1,5 @@
 import 'package:diet_esports/components/Images.dart';
+import 'package:diet_esports/components/custom_btn.dart';
 import 'package:diet_esports/components/fonts.dart';
 import 'package:flutter/material.dart';
 
@@ -31,10 +32,7 @@ class OnboradingScreen extends StatelessWidget {
                   width: 50,
                   decoration: BoxDecoration(
                     color: Colors.transparent,
-                    border: Border.all(
-                      color: Colors.white,
-                      width: 4,
-                    ),
+                    border: Border.all(color: Colors.white, width: 4),
                     borderRadius: BorderRadius.circular(
                       8,
                     ), // optional rounded corners
@@ -100,32 +98,14 @@ class OnboradingScreen extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   const SizedBox(height: 30),
-                  ElevatedButton(
-                    onPressed: onNext, // Logics Of Get Started Button
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Color(0xFFF4B701), // button color
-                      foregroundColor: Colors.black,       // text color
-                      minimumSize: Size(MediaQuery.of(context).size.width / 2, 55), // width & height
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      textStyle: TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: Fonts.poppins,
-                      ),
-                    ),
-                    child: Text(
-                      "Get Started",
-                      textAlign: TextAlign.center,
-                      style:TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: Fonts.poppins,
-                    ),
-                    ),
-                  )
-
+                  CustomButton(
+                    text: "Get Started",
+                    onPressed: onNext,
+                    fontsize: 20,
+                    heightPercent: 0.07,
+                    // 7% of screen height
+                    widthPercent: 0.5, // 50% of screen width
+                  ),
                 ],
               ),
             ),

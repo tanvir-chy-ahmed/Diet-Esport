@@ -1,3 +1,4 @@
+import 'package:diet_esports/components/fonts.dart';
 import 'package:flutter/material.dart';
 
 class PcScreen extends StatelessWidget {
@@ -6,8 +7,17 @@ class PcScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Text("Diet Screen"),
-
+      backgroundColor: const Color(0xFF171717),
+      body: Center(
+        child: Text(
+          'Coming Soon \n\t\t\t\t__Tanvir',
+          style: TextStyle(
+            fontSize: 30,
+            color: Colors.white,
+            fontFamily: Fonts.poppins,
+          ),
+        ),
+      ),
     );
   }
 }
